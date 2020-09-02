@@ -6,6 +6,7 @@
 
 # Features:
 # Search, find, display available systems (monitors, computers, keyboard, mouse) that are ready for deployment
+# add inventory using forms created in Python
 
 # Languages:
 # Python, SQL
