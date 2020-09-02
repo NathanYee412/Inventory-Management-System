@@ -48,6 +48,26 @@
       <td>{{ item.issues }}</td>
       <td>{{ item.user }}</td>
       <td>{{ item.location }}</td>
+      {% if header|lower == "laptops" %}
+      <td>
+        <a href="{% url 'edit_laptop' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
+      </td>
+      {% elif header|lower == "desktops" %}
+      <td>
+        <a href="{% url 'edit_desktop' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
+      </td>
+      {% elif heade|lower == "mobiles" %}
+      <td>
+        <a href="{% url 'edit_mobile' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
+      </td>
+      {% else %}
+      <td>
+        <a href="{% url 'edit_equipment' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
+      </td>
+      {% endif %}
+
+
+
     </tr>
 
     {% endfor %}

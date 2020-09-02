@@ -11,6 +11,8 @@
 # Languages:
 # Python, SQL
 
+################################################################################
+# django commands 
 
 
 # How to start Django local server
