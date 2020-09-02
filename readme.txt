@@ -12,7 +12,7 @@
 # Python, SQL
 
 ################################################################################
-# django commands 
+# django commands
 
 
 # How to start Django local server
@@ -46,3 +46,4 @@
 
 Currently following youtube django tutorial
 https://www.youtube.com/watch?v=WX60HRkfasI
+https://www.youtube.com/watch?v=s-ILcyrCzPQ # part 7 on adding delete button 
