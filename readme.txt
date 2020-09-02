@@ -29,5 +29,18 @@
 3. run -> python manage.py migrate
 4. might have to delete the sql db file and remigrate (you will lose all stored data)
 
+################################################################################
+# git useful commands
+# git status
+1. git status shows you what files have had changes made to them
+
+# git commit -a -m "insert comment"
+# stages commit to become pushed
+
+# git push
+# pushes changed files to repository
+
+
+
 Currently following youtube django tutorial
 https://www.youtube.com/watch?v=WX60HRkfasI
