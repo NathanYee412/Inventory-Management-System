@@ -11,6 +11,8 @@
 # Languages:
 # Python, SQL
 
+
+Notes
 ################################################################################
 # django commands
 
@@ -26,10 +28,9 @@
 3. input account info
 
 # How to add value to the sql database
-1. make changes in models.py
-2. run -> python manage.py makemigrations
-3. run -> python manage.py migrate
-4. might have to delete the sql db file and remigrate (you will lose all stored data)
+1. Change your models (in models.py).
+2. Run python manage.py makemigrations to create migrations for those changes
+3. Run python manage.py migrate to apply those changes to the database.
 
 ################################################################################
 # git useful commands
@@ -38,6 +39,7 @@
 
 # git commit -a -m "insert comment"
 # stages commit to become pushed
+# need to run git push after commit to make changes to the repository
 
 # git push
 # pushes changed files to repository
@@ -46,4 +48,4 @@
 
 Currently following youtube django tutorial
 https://www.youtube.com/watch?v=WX60HRkfasI
-https://www.youtube.com/watch?v=s-ILcyrCzPQ # part 7 on adding delete button 
+https://www.youtube.com/watch?v=s-ILcyrCzPQ # part 7 on adding delete button
