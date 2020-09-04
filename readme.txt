@@ -35,7 +35,7 @@ Notes
 ################################################################################
 # git useful commands
 # git status
-1. git status shows you what files have had changes made to them
+# git status shows you what files have had changes made to them
 
 # git commit -a -m "insert comment"
 # stages commit to become pushed
