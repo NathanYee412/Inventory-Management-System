@@ -14,9 +14,10 @@ class Device(models.Model): #name of the table
     issues = models.CharField(max_length=100, default="No issues")
     user = models.CharField(max_length=100, default="USER")
     location = models.CharField(max_length=10, default="LOCATION")
+    partNumber = models.CharField(max_length=20, default="PART NUMBER")
 
     def __str__(self):
-        return 'Type : {0} Price : {1} User : {2} Location : {3}'.format(self.type, self.price, self.user, self.location)
+        return 'Type : {0} Price : {1} User : {2} Part Number : {3} Location : {4}'.format(self.type, self.price, self.user, self.partNumber, self.location)
 
 
     class Meta:
