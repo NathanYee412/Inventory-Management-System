@@ -11,6 +11,10 @@
 # Languages:
 # Python, SQL
 
+## removed from line 13 on index.html
+<a href="{% url 'display_mobiles' %}" class="btn btn-primary btn-md" role="button">Mobiles</a>
+<a href="{% url 'add_mobile' %}" class="btn btn-primary btn-md" role="button">+</a>
+
 
 Notes
 ################################################################################

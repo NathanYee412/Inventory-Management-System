@@ -11,9 +11,6 @@
   <a href="{% url 'display_desktops' %}" class="btn btn-primary btn-md" role="button">Desktops</a>
   <a href="{% url 'add_desktop' %}" class="btn btn-primary btn-md" role="button">+</a>
 
-  <a href="{% url 'display_mobiles' %}" class="btn btn-primary btn-md" role="button">Mobiles</a>
-  <a href="{% url 'add_mobile' %}" class="btn btn-primary btn-md" role="button">+</a>
-
   <a href="{% url 'display_equipment' %}" class="btn btn-primary btn-md" role="button">Equipment</a>
   <a href="{% url 'add_equipment' %}" class="btn btn-primary btn-md" role="button">+</a>
 
@@ -58,7 +55,7 @@
         <a href="{% url 'edit_desktop' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
         <a href="{% url 'delete_desktop' item.pk %}" class="btn btn-danger btn-sm" role="button">x</a>
       </td>
-      {% elif heade|lower == "mobiles" %}
+      {% elif header|lower == "mobiles" %}
       <td>
         <a href="{% url 'edit_mobile' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
         <a href="{% url 'delete_mobile' item.pk %}" class="btn btn-danger btn-sm" role="button">x</a>
