@@ -7,11 +7,10 @@ class Device(models.Model): #name of the table
 
     choices = (
         ('AVAILABLE', 'Item ready to be purchased'),
-        ('SOLD', 'Item Sold'),
-        ('RESTOCKING', 'Item restocking in a few days'),
+        ('OUT OF ORDER', 'Item is not working properly'),
         ('IN-USE', 'Item is being used by employee')
     )
-    status = models.CharField(max_length=10, choices=choices, default="SOLD") # available, sold, restocking
+    status = models.CharField(max_length=15, choices=choices, default="AVAILABLE") # available, sold, restocking
     issues = models.CharField(max_length=100, default="No issues")
     user = models.CharField(max_length=100, default="USER")
     location = models.CharField(max_length=10, default="LOCATION")
