@@ -6,6 +6,11 @@ from .forms import *
 def index(request):
     return render(request, 'index.html')
 
+
+"""
+DISPLAY FUNCTIONS
+"""
+
 def display_laptops(request):
     items = Laptop.objects.all()
     context = {
@@ -39,6 +44,12 @@ def display_equipment(request):
     }
     return render(request, 'index.html', context) # 3 arguements
 
+
+
+"""
+ADD FUNCTIONS
+"""
+
 def add_device(request, cls):
     if request.method == "POST":
         form = cls(request.POST)
@@ -61,6 +72,10 @@ def add_mobile(request):
 
 def add_equipment(request):
     return add_device(request, EquipmentForm)
+
+"""
+EDIT FUNCTIONS
+"""
 
 def edit_device(request, pk, model, cls):
     item = get_object_or_404(model, pk=pk)
@@ -86,6 +101,11 @@ def edit_mobile(request, pk):
 
 def edit_equipment(request, pk):
     return edit_device(request, pk, Equipment, EquipmentForm)
+
+
+"""
+DELETE FUNCTIONS
+"""
 
 def delete_laptop(request, pk):
 
