@@ -49,3 +49,4 @@ Notes
 Currently following youtube django tutorial
 https://www.youtube.com/watch?v=WX60HRkfasI
 https://www.youtube.com/watch?v=s-ILcyrCzPQ # part 7 on adding delete button
+https://www.youtube.com/watch?v=x272Sy9TZ4I # importing excel sheets into ims

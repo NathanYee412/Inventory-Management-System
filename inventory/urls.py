@@ -19,5 +19,8 @@ urlpatterns = [
     url(r'^edit_mobile/(?P<pk>\d+)$', edit_mobile, name='edit_mobile'),
     url(r'^edit_equipment/(?P<pk>\d+)$', edit_equipment, name='edit_equipment'),
 
-
+    url(r'^delete_laptop/(?P<pk>\d+)$', delete_laptop, name='delete_laptop'),
+    url(r'^delete_mobile/(?P<pk>\d+)$', delete_mobile, name='delete_mobile'),
+    url(r'^delete_desktop/(?P<pk>\d+)$', delete_desktop, name='delete_desktop'),
+    url(r'^delete_equipment/(?P<pk>\d+)$', delete_equipment, name='delete_equipment'),
 ]

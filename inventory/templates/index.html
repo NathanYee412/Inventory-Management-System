@@ -51,18 +51,22 @@
       {% if header|lower == "laptops" %}
       <td>
         <a href="{% url 'edit_laptop' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
+        <a href="{% url 'delete_laptop' item.pk %}" class="btn btn-danger btn-sm" role="button">x</a>
       </td>
       {% elif header|lower == "desktops" %}
       <td>
         <a href="{% url 'edit_desktop' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
+        <a href="{% url 'delete_desktop' item.pk %}" class="btn btn-danger btn-sm" role="button">x</a>
       </td>
       {% elif heade|lower == "mobiles" %}
       <td>
         <a href="{% url 'edit_mobile' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
+        <a href="{% url 'delete_mobile' item.pk %}" class="btn btn-danger btn-sm" role="button">x</a>
       </td>
       {% else %}
       <td>
         <a href="{% url 'edit_equipment' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>
+        <a href="{% url 'delete_equipment' item.pk %}" class="btn btn-danger btn-sm" role="button">x</a>
       </td>
       {% endif %}
 
