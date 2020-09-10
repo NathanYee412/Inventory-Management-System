@@ -29,6 +29,7 @@
       <th>Issues</th>
       <th>User</th>
       <th>Location</th>
+      <th>Service Tag</th>
     </tr>
   </thead>
 
@@ -45,6 +46,7 @@
       <td>{{ item.issues }}</td>
       <td>{{ item.user }}</td>
       <td>{{ item.location }}</td>
+      <td>{{ item.serviceTag }}</td>
       {% if header|lower == "laptops" %}
       <td>
         <a href="{% url 'edit_laptop' item.pk %}" class="btn btn-warning btn-sm" role="button">Edit</a>

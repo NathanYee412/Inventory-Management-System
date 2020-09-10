@@ -11,10 +11,11 @@ class Device(models.Model): #name of the table
         ('IN-USE', 'Item is being used by employee')
     )
     status = models.CharField(max_length=15, choices=choices, default="AVAILABLE") # available, sold, restocking
-    issues = models.CharField(max_length=100, default="No issues")
+    issues = models.CharField(max_length=100, default="ENTER ISSUES")
     user = models.CharField(max_length=100, default="USER")
     location = models.CharField(max_length=10, default="LOCATION")
     partNumber = models.CharField(max_length=20, default="PART NUMBER")
+    serviceTag = models.CharField(max_length=20, default="SERVICE TAG" )
 
     def __str__(self):
         return 'Type : {0} Price : {1} User : {2} Part Number : {3} Location : {4}'.format(self.type, self.price, self.user, self.partNumber, self.location)
