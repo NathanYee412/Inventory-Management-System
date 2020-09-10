@@ -6,7 +6,7 @@ class Device(models.Model): #name of the table
     price = models.IntegerField()
 
     choices = (
-        ('AVAILABLE', 'Item ready to be purchased'),
+        ('AVAILABLE', 'Item is available for use'),
         ('OUT OF ORDER', 'Item is not working properly'),
         ('IN-USE', 'Item is being used by employee')
     )
