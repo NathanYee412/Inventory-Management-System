@@ -14,7 +14,7 @@
 ## removed from line 13 on index.html
 <a href="{% url 'display_mobiles' %}" class="btn btn-primary btn-md" role="button">Mobiles</a>
 <a href="{% url 'add_mobile' %}" class="btn btn-primary btn-md" role="button">+</a>
-
+# Reason: Do no
 
 Notes
 ################################################################################
@@ -35,6 +35,10 @@ Notes
 1. Change your models (in models.py).
 2. Run python manage.py makemigrations to create migrations for those changes
 3. Run python manage.py migrate to apply those changes to the database.
+
+
+# How to access django server on local network 
+https://stackoverflow.com/questions/15471173/accessing-django-project-in-lan-systems
 
 ################################################################################
 # git useful commands
