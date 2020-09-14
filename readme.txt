@@ -9,12 +9,16 @@
 # add inventory using forms created in Python
 
 # Languages:
-# Python, SQL
+# Python, SQL, html, css
 
 ## removed from line 13 on index.html
 <a href="{% url 'display_mobiles' %}" class="btn btn-primary btn-md" role="button">Mobiles</a>
 <a href="{% url 'add_mobile' %}" class="btn btn-primary btn-md" role="button">+</a>
 # Reason: Do no
+
+# runserver command
+# python manage.py runserver 192.168.0.231:8000
+
 
 Notes
 ################################################################################

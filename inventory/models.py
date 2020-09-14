@@ -8,13 +8,14 @@ class Device(models.Model): #name of the table
     choices = (
         ('AVAILABLE', 'Item is available for use'),
         ('OUT OF ORDER', 'Item is not working properly'),
-        ('IN-USE', 'Item is being used by employee')
+        ('IN-USE', 'Item is being used by employee'),
+        ('DECOMMISSIONED', 'Item has been decommissioned')
     )
     status = models.CharField(max_length=15, choices=choices, default="AVAILABLE") # available, sold, restocking
     issues = models.CharField(max_length=100, default="ENTER ISSUES")
     user = models.CharField(max_length=100, default="USER")
     location = models.CharField(max_length=10, default="LOCATION")
-    partNumber = models.CharField(max_length=20, default="PART NUMBER")
+    assetNum = models.CharField(max_length=20, default="ASSET NUMBER")
     serviceTag = models.CharField(max_length=20, default="SERVICE TAG" )
 
     def __str__(self):
