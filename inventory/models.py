@@ -19,7 +19,7 @@ class Device(models.Model): #name of the table
     serviceTag = models.CharField(max_length=20, default="SERVICE TAG" )
 
     def __str__(self):
-        return 'Type : {0} Price : {1} User : {2} Part Number : {3} Location : {4}'.format(self.type, self.price, self.user, self.partNumber, self.location)
+        return 'Type : {0} Price : {1} User : {2} Part Number : {3} Location : {4}'.format(self.type, self.price, self.user, self.assetNum, self.location)
 
 
     class Meta:
