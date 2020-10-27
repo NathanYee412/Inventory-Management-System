@@ -4,6 +4,7 @@ from .views import *
 urlpatterns = [
 
     url(r'^$', index, name='index'),
+    url(r'^map', index, name='map'),
     url(r'^display_laptops$', display_laptops, name='display_laptops'),
     url(r'^display_desktops$', display_desktops, name='display_desktops'),
     url(r'^display_mobiles$', display_mobiles, name='display_mobiles'),
